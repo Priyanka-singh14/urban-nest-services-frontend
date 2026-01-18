@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Services</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<section class="max-w-7xl mx-auto p-8">
+<h1 class="text-3xl font-bold mb-6">Our Services</h1>
+
+<div class="grid md:grid-cols-2 gap-6">
+<button 
+  onclick="showService('Interior Design')" 
+  class="p-4 shadow rounded transition transform hover:scale-105">Interior Design</button>
+</button>
+<button 
+  onclick="showService('Construction')" 
+  class="p-4 shadow rounded transition transform hover:scale-105">Construction</button>
+<button 
+  onclick="showService('Maintenance')" 
+  class="p-4 shadow rounded transition transform hover:scale-105">Maintenance</button>
+<button 
+  onclick="showService('Consulting')" 
+  class="p-4 shadow rounded transition transform hover:scale-105">Consulting</button>
+</div>
+
+<div id="modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+  <div class="bg-white p-6 rounded">
+    <h2 id="serviceTitle" class="text-xl font-bold"></h2>
+    <button onclick="closeModal()" class="mt-4 bg-indigo-600 text-white px-4 py-2">
+      Close
+    </button>
+  </div>
+</div>
+
+</section>
+
+<div id="footer"></div>
+<script src="js/main.js"></script>
+<script src="js/services.js"></script>
+</body>
+</html>
